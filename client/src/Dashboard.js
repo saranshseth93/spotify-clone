@@ -27,7 +27,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return;
 
     axios
-      .get("http://localhost:3001/lyrics", {
+      .get("https://vibrant-mayer-96d01b.netlify.app/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
